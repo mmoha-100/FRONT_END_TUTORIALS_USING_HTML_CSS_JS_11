@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Typing Speed Test</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div class="game">
+            <div class="name">Typing Speed Text Game</div>
+            <div class="container">
+                <div class="choose-level">
+                    <p>Choose A Level</p>
+                    <input type="radio" name="lvl" id="lvl-1" class="Easy" />
+                    <label for="lvl-1">Easy</label>
+                    <input
+                        type="radio"
+                        name="lvl"
+                        id="lvl-2"
+                        class="Normal"
+                        checked
+                    />
+                    <label for="lvl-2">Normal</label>
+                    <input type="radio" name="lvl" id="lvl-3" class="Hard" />
+                    <label for="lvl-3">Hard</label>
+                </div>
+                <div class="msg">
+                    You Are Playing Game On Level <span class="lvl"></span> &
+                    You Have <span class="seconds"></span>Seconds To Type The
+                    Word
+                </div>
+                <button class="start">Start Playing</button>
+                <div class="the-word"></div>
+                <input type="text" class="input" />
+                <div class="upcoming-words">Words Will Be Shown Here</div>
+                <div class="control">
+                    <div class="time-left">
+                        Time Left: <span></span> Seconds
+                    </div>
+                    <div class="score">
+                        Score: <span class="got">0</span> From
+                        <span class="total"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="finish disabled-msg">
+                <button>Play Again</button>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
